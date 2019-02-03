@@ -1,17 +1,18 @@
-##  Linux常用命令
-1. 查看日志
+##  Linux common commands 
+1. View log
 ```linux
 tail -f catalina.out
 ```
-2. 统计字符串在日志出现的次数
+2. Count the number of times a string appears in the log
 ```linux
 grep "xxx" mall.log | wc -l
 ```
-3. 统计多个字符串在日志出现的次数(每个之间加 \\|)
+3. Count the number of times multiple strings appear in the log (add \| between each)
 ```linux
 grep "xxx\|xxx\|xxx" mall.log | wc -l
 ```
-4. 从10000行开始查看日志
+4. View the log starting at line 10000
 ```linux
 more +10000 mall.log
 ```
+
